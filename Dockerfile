@@ -1,8 +1,8 @@
 FROM alpine:3.8
-LABEL maintainer="Andrew Huynh <a5thuynh@gmail.com>"
+LABEL maintainer="Yovi Oktofianus <yoviok@gmail.com>"
 
 # When this Dockerfile was last refreshed (year/month/day)
-ENV REFRESHED_AT 2018-07-25
+ENV REFRESHED_AT 2018-12-28
 
 # Install CA certificates
 RUN apk add --no-cache --virtual=build-dependencies ca-certificates
