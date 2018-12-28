@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/a5huynh/oauth2_proxy.svg?branch=master)](https://travis-ci.org/a5huynh/oauth2_proxy) [![license: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.org/yovio/oauth2_proxy.svg?branch=master)](https://travis-ci.org/yovio/oauth2_proxy) [![license: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## oauth2_proxy dockerization
 
@@ -9,7 +9,7 @@ Check out the bitly github page for more details on the different command line
 options that can be passed in.
 
 This is also an automated
-[Docker Hub build](https://hub.docker.com/r/a5huynh/oauth2_proxy/)
+[Docker Hub build](https://hub.docker.com/r/yovio/oauth2_proxy/)
 
 ### Supported tags and respective `Dockerfile` links
 * `2.2-debian` ([Dockerfile](https://github.com/a5huynh/oauth2_proxy/blob/cb657302b1a433e654a6cd97e30aa0c0dee8075c/Dockerfile))
@@ -35,7 +35,7 @@ nginx container serving a simple HTML page.
 
 The following example assumes you have your upstream host located at `upstream:80`
 
-    docker run -P a5huynh/oauth2_proxy \
+    docker run -P yovio/oauth2_proxy \
         --cookie-secure=false \
         --upstream="http://upstream:80" \
         --http-address="0.0.0.0:4180" \
@@ -65,4 +65,4 @@ environment variables using the following variables below:
     docker run -e OAUTH2_PROXY_COOKIE_SECRET=<cookie-secret> \
         -e OAUTH2_PROXY_CLIENT_ID=<client-id> \
         -e OAUTH2_PROXY_CLIENT_SECRET=<client-secret> \
-        a5huynh/oauth2_proxy
+        yovio/oauth2_proxy
